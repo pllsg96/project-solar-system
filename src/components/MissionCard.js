@@ -14,7 +14,7 @@ class MissionCard extends Component {
   }
 }
 
-PlanetCard.propTypes = {
+MissionCard.propTypes = {
   name: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
   country: PropTypes.string.isRequired,
