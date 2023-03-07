@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from './Title';
 import Planets from '../data/planets';
 import PlanetCard from './PlanetCard';
+import './style/SolarSystem.css';
 
 class SolarSystem extends Component {
   render() {
@@ -10,12 +11,15 @@ class SolarSystem extends Component {
         key={ name }
         planetName={ name }
         planetImage={ image }
+
       />
     ));
     return (
-      <div data-testid="solar-system">
+      <div>
         <Title headline="Planetas" />
-        {x}
+        <div className="solar-system" data-testid="solar-system">
+          {x}
+        </div>
       </div>
     );
   }
